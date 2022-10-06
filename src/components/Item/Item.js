@@ -1,9 +1,11 @@
 import './item.css'
+import { Link } from 'react-router-dom'
 
 const Item = (product) => {
    
     return (
-        <div key={product.id} className='card'>
+        <Link to={`/detail/${product.id}`}>
+             <div  className='card'>
              <header>
                 <h2>{product.name}</h2>
             </header>
@@ -18,6 +20,8 @@ const Item = (product) => {
                 <h2> {product.price} </h2>
             </div>
         </div>
+        </Link>
+       
     )
 
     

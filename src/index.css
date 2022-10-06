@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://w7.pngwing.com/pngs/151/567/png-transparent-cartoon-hot-air-balloon-hand-painted-hot-air-balloon-colored-hot-air-balloon-hand-painted-thumbnail.png');
+  background-repeat: repeat;
+  
 }
 
 code {

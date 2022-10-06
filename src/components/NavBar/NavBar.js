@@ -1,6 +1,9 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import LogoPaca from './assets/LogoPaca.jpg'
+import { Link } from 'react-router-dom'
+
+
 const NavBar = () => {
     return (
         <header className='headerNav'>
@@ -8,17 +11,20 @@ const NavBar = () => {
                 <div className='divContainer'>
                     <div className='logoNav'>
                         <img src={LogoPaca} alt='logo' className='logoImg' />
-                        <h1 className='navLogo'>PacaBebebes</h1>
+                        <Link to='/'>
+                            <h3 className='navLogo'>PacaBebebes</h3>
+                        </Link>
+                        
                     </div>
                     
                     <CartWidget />
                     <div className='navMenu'>
                        
-                        <button className='navItems'>Productos</button>
-                        <button className='navItems'>Acerca de</button>
-                        <button className='navItems'>Contacto</button>
+                        <Link to='/category/tejidos' className='navItems'>Tejidos</Link>
+                        <Link to='/category/packs' className='navItems'>Packs bebe</Link>
+                        <Link to='/category/amigrumis' className='navItems'>Amigrumis</Link>
 
-                
+           
                     </div>
                     
                 </div>
